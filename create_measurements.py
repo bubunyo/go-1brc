@@ -121,7 +121,6 @@ def build_test_data(weather_station_names, num_rows_to_create):
             if num_rows_to_create<batch_size:
                 batch_size = num_rows_to_create
             for s in range(0,num_rows_to_create // batch_size):
-                
                 batch = random.choices(station_names_10k_max, k=batch_size)
                 prepped_deviated_batch = '\n'.join([f"{station};{random.uniform(coldest_temp, hottest_temp):.1f}" for station in batch]) # :.1f should quicker than round on a large scale, because round utilizes mathematical operation
                 file.write(prepped_deviated_batch + '\n')
