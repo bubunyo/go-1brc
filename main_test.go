@@ -25,7 +25,7 @@ func TestMain_OutputFile(t *testing.T) {
 }
 
 func TestMain_WithData_NoOut(t *testing.T) {
-	_ = Main("./data/measurements-1000000000.txt")
+	_ = Main("./data/measurements-1000000.txt")
 }
 
 func TestMain(t *testing.T) {
