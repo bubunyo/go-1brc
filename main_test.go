@@ -13,8 +13,8 @@ import (
 )
 
 func TestMain_WithData(t *testing.T) {
-	res := Main("./test_cases/measurements-1.txt")
-	out := readFile("./test_cases/measurements-1.out")
+	res := Main("./test_cases/measurements-3.txt")
+	out := readFile("./test_cases/measurements-3.out")
 	assert.Equal(t, out, res)
 }
 
